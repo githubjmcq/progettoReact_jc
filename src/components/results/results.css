@@ -1,0 +1,5 @@
+div.body{
+    margin: 10px;
+    border: 1px solid rgb(255, 0, 0);
+    min-height: auto;
+}

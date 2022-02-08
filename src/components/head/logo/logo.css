@@ -1,0 +1,19 @@
+div.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+div.logo{
+    width: 20%;
+}
+p#l{
+    margin: 0%;
+}
+div.lg{
+    width: 50%;
+    margin: 15px;
+    height: 50%;
+    background-color: #00CD66;
+    border: 1px solid #2E8B57;
+    color: aliceblue;
+}

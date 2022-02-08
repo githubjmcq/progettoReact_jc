@@ -1,0 +1,14 @@
+div.info{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgb(46, 116, 0);
+}
+a{
+    text-decoration: none;
+}
+div.infoposizione{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 15px;
+}
