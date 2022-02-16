@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './results.css';
 import { Repo } from "./repo/repo";
-import { TableStudents } from "./tablestudents/table.js";
+import { TableStudents } from "./tableStudents/tableStudents.js";
 
 export class Results extends Component {
     render(props) {
