@@ -1,5 +1,4 @@
 import { Search } from '../search/search';
-//import { Select } from '../select/select';
 import './repo.css';
 
 export const Repo = (props) => {

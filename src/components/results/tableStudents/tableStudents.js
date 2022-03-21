@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { listRepos } from '../../api/listRepos';
-import './table.css';
+import './tableStudents.css';
 
 export const TableStudents = () => {
     const [repos, setRepos] = useState([]);
