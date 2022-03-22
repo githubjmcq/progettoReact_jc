@@ -1,11 +1,17 @@
 import { listRepos } from '../components/api/listRepos';
+import mockAxios from "jest-mock-axios";
+import axios from 'axios';
+import { BASE_URL, fetchUsrs } from 'utils'; 
+
 describe('repos_pieno', () => {
+    jest.mock("axios");
+
     // happy path
-    it('verifica_struttura_risultato_corretto', async () => {
+    it('chiamata', async () => {
         let arrayTestStuent = [];
         arrayTestStuent = await listRepos();
-        let numArray = arrayTestStuent.length;
-        expect(numArray).toBeGreaterThan(1);
+        let BASE_URL = 'https://github-funtion-ttf.azurewebsites.net/api/httpstudentsrepos';
+        expect(axios.get).toHaveBeenCalledWith(BASE_URL);
 
     });
     // edge cases/exeptions
@@ -17,6 +23,10 @@ describe('repos_pieno', () => {
     });
 
     it('rete_in_down', () => {
+            let arrayTestStuent = [];
+            arrayTestStuent = await listRepos();
+            let numArray = arrayTestStuent.length;
+            expect(numArray).toNotBe(1);
 
     });
 
