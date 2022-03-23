@@ -10,8 +10,9 @@ describe('repos_pieno', () => {
     it('chiamata', async () => {
         let arrayTestStuent = [];
         arrayTestStuent = await listRepos();
-        let BASE_URL = 'https://github-funtion-ttf.azurewebsites.net/api/httpstudentsrepos';
-        expect(axios.get).toHaveBeenCalledWith(BASE_URL);
+        let arrayTestStuentNumber = arrayTestStuent.length;
+        //let BASE_URL = 'https://github-funtion-ttf.azurewebsites.net/api/httpstudentsrepos';
+        expect(arrayTestStuentNumber).toBeGreaterThan(1);
 
     });
     // edge cases/exeptions
@@ -19,14 +20,14 @@ describe('repos_pieno', () => {
         let arrayTestStuent = [];
         arrayTestStuent = listRepos();
         let numArray = arrayTestStuent.length;
-        expect(numArray).toEqual(undefined);
+        expect(numArray).to
     });
 
     it('rete_in_down', () => {
             let arrayTestStuent = [];
-            arrayTestStuent = await listRepos();
+            arrayTestStuent = listRepos();
             let numArray = arrayTestStuent.length;
-            expect(numArray).toNotBe(1);
+            expect(numArray).not.toBe(1);
 
     });
 

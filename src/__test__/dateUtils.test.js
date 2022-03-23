@@ -1,4 +1,4 @@
-import {formatDate} from '../components/date/dateUtils';
+/*import {formatDate} from '../components/date/dateUtils';
 
 describe('formattazione delle date', () => {
 
@@ -19,4 +19,4 @@ describe('formattazione delle date', () => {
         const myDate = 'questa è una stringa';
         expect(() => formatDate(myDate)).toThrow();
     });
-});
+});*/
